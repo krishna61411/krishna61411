@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Gupta's Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        h1, h2 {
+            color: #0073e6;
+        }
+        .bio {
+            margin-bottom: 2rem;
+        }
+        .ai-section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        a {
+            color: #0073e6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Krishna Gupta's Personal Webpage</h1>
+    </header>
+    <div class="container">
+        <section class="bio">
+            <h2>About Me</h2>
+            <p>Hi, I'm Krishna Gupta, a passionate coder with a keen interest in exploring the vast realms of technology. I love solving complex problems and creating innovative solutions through code. My journey in the world of programming has been thrilling, and I'm always eager to learn and grow more each day.</p>
+        </section>
+        <section class="ai-section">
+            <h2>AI on Personal Growth in Studies</h2>
+            <p>Welcome to the AI section where we explore personal growth in studies. This AI provides tips and strategies to enhance your learning experience and academic performance.</p>
+            <button onclick="displayAIGrowthMessage()">Click to see AI Growth Message</button>
+            <p id="ai-message"></p>
+            <script>
+                function displayAIGrowthMessage() {
+                    const messages = [
+                        "Consistency is key. Study a bit every day to keep the momentum going.",
+                        "Set clear goals and track your progress regularly.",
+                        "Take regular breaks to keep your mind fresh and avoid burnout.",
+                        "Practice active learning by engaging with the material through discussions and practice problems.",
+                        "Stay curious and always seek to understand the 'why' behind concepts."
+                    ];
+                    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                    document.getElementById('ai-message').innerText = randomMessage;
+                }
+            </script>
+        </section>
+        <section class="social-media">
+            <h2>Connect with Me</h2>
+            <p>Follow me on Instagram: <a href="https://instagram.com/krishnagupta614" target="_blank">@krishnagupta614</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Krishna Gupta</p>
+    </footer>
+</body>
+</html>
+
